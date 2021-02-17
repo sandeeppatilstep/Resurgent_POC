@@ -651,3 +651,24 @@ TC_3,Transaction,Success,Transaction with TC_3 Successfull,02/18/2021 03:33:46
 General,General,Process,Completed all Tasks. No More Data Left to Process,02/18/2021 03:33:46
 General,General,Process,All Report Generation Completed,02/18/2021 03:33:51
 General,General,General,RTA Process Completed,02/18/2021 03:33:51
+General,General,Process,Transactions Input,02/18/2021 04:04:21
+General,General,Process,RTA Process Initiated,02/18/2021 04:04:22
+TC_3,Transaction,Process,Transaction Starts,02/18/2021 04:04:22
+General,General,Process,Transactions Input,02/18/2021 04:14:07
+General,General,Process,RTA Process Initiated,02/18/2021 04:14:07
+TC_3,Transaction,Process,Transaction Starts,02/18/2021 04:14:07
+TC_3,Transaction,Success,Transaction with TC_3 Successfull,02/18/2021 04:16:20
+General,General,Process,Completed all Tasks. No More Data Left to Process,02/18/2021 04:16:20
+General,General,Process,All Report Generation Completed,02/18/2021 04:16:26
+General,General,Process,Transactions Input,02/18/2021 04:20:37
+General,General,Process,RTA Process Initiated,02/18/2021 04:20:37
+TC_3,Transaction,Process,Transaction Starts,02/18/2021 04:20:37
+TC_3,Transaction,Success,Transaction with TC_3 Successfull,02/18/2021 04:26:44
+General,General,Process,Completed all Tasks. No More Data Left to Process,02/18/2021 04:26:44
+General,General,Process,All Report Generation Completed,02/18/2021 04:26:49
+General,General,Process,Transactions Input,02/18/2021 04:30:08
+General,General,Process,RTA Process Initiated,02/18/2021 04:30:08
+TC_3,Transaction,Process,Transaction Starts,02/18/2021 04:30:08
+General,General,Process,Transactions Input,02/18/2021 04:32:44
+General,General,Process,RTA Process Initiated,02/18/2021 04:32:44
+TC_3,Transaction,Process,Transaction Starts,02/18/2021 04:32:45
