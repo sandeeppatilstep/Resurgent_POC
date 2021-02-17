@@ -617,3 +617,37 @@ TC_8,Transaction,Success,Transaction with TC_8 Successfull,02/18/2021 02:27:27
 General,General,Process,Completed all Tasks. No More Data Left to Process,02/18/2021 02:27:27
 General,General,Process,All Report Generation Completed,02/18/2021 02:27:33
 General,General,General,RTA Process Completed,02/18/2021 02:27:33
+General,General,Process,Transactions Input,02/18/2021 03:13:00
+General,General,Process,RTA Process Initiated,02/18/2021 03:13:01
+TC_3,Transaction,Process,Transaction Starts,02/18/2021 03:13:02
+TC_3,,Failure,Retrying needed at report generation proccess, retying at 1 Sequence - Invoke RTA_Read_TestData workflow: Read Range Test Data FileObject reference not set to an instance of an object.,02/18/2021 03:13:08
+TC_3,Transaction,Failure,Transaction with TC_3 Unsuccessfull. Invoke RTA_Read_TestData workflow: Read Range Test Data FileObject reference not set to an instance of an object.,02/18/2021 03:13:08
+General,General,Process,Completed all Tasks. No More Data Left to Process,02/18/2021 03:13:08
+General,General,Process,All Report Generation Completed,02/18/2021 03:13:14
+General,General,General,RTA Process Completed,02/18/2021 03:13:14
+General,General,Process,Transactions Input,02/18/2021 03:14:14
+General,General,Process,RTA Process Initiated,02/18/2021 03:14:14
+TC_3,Transaction,Process,Transaction Starts,02/18/2021 03:14:15
+TC_3,,Failure,Retrying needed at report generation proccess, retying at 1 Sequence - Invoke RTA_Read_TestData workflow: Read Range Test Data FileObject reference not set to an instance of an object.,02/18/2021 03:14:19
+TC_3,Transaction,Failure,Transaction with TC_3 Unsuccessfull. Invoke RTA_Read_TestData workflow: Read Range Test Data FileObject reference not set to an instance of an object.,02/18/2021 03:14:19
+General,General,Process,Completed all Tasks. No More Data Left to Process,02/18/2021 03:14:19
+General,General,Process,All Report Generation Completed,02/18/2021 03:14:24
+General,General,General,RTA Process Completed,02/18/2021 03:14:24
+General,General,Process,Transactions Input,02/18/2021 03:15:07
+General,General,Process,RTA Process Initiated,02/18/2021 03:15:07
+TC_3,Transaction,Process,Transaction Starts,02/18/2021 03:15:08
+TC_3,,Failure,Retrying needed at report generation proccess, retying at 1 Sequence - Invoke RTA_Read_TestData workflow: Read Range Test Data FileObject reference not set to an instance of an object.,02/18/2021 03:15:12
+TC_3,Transaction,Failure,Transaction with TC_3 Unsuccessfull. Invoke RTA_Read_TestData workflow: Read Range Test Data FileObject reference not set to an instance of an object.,02/18/2021 03:15:12
+General,General,Process,Completed all Tasks. No More Data Left to Process,02/18/2021 03:15:12
+General,General,Process,All Report Generation Completed,02/18/2021 03:15:17
+General,General,General,RTA Process Completed,02/18/2021 03:15:18
+General,General,Process,Transactions Input,02/18/2021 03:16:53
+General,General,Process,RTA Process Initiated,02/18/2021 03:16:53
+TC_3,Transaction,Process,Transaction Starts,02/18/2021 03:16:53
+General,General,Process,Transactions Input,02/18/2021 03:27:08
+General,General,Process,RTA Process Initiated,02/18/2021 03:27:08
+TC_3,Transaction,Process,Transaction Starts,02/18/2021 03:27:08
+TC_3,Transaction,Success,Transaction with TC_3 Successfull,02/18/2021 03:33:46
+General,General,Process,Completed all Tasks. No More Data Left to Process,02/18/2021 03:33:46
+General,General,Process,All Report Generation Completed,02/18/2021 03:33:51
+General,General,General,RTA Process Completed,02/18/2021 03:33:51

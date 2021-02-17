@@ -39,7 +39,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1356.8,5163.2</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1357.6,6397.6</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>RAM_Transaction_Template_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="45">
@@ -131,7 +131,7 @@
       <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="RTA_TestCase_Template" sap:VirtualizedContainerService.HintSize="1367.2,4998.4" sap2010:WorkflowViewState.IdRef="Sequence_82">
+  <Sequence DisplayName="RTA_TestCase_Template" sap:VirtualizedContainerService.HintSize="1368,6232.8" sap2010:WorkflowViewState.IdRef="Sequence_82">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="ExpectedResult" />
       <Variable x:TypeArguments="s:DateTime" Name="dateTime_CaseStartTime" />
@@ -154,8 +154,8 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ra:StartTest ContinueOnError="{x:Null}" TagName="{x:Null}" TestDescription="{x:Null}" testList="{x:Null}" DisplayName="Start Test" sap:VirtualizedContainerService.HintSize="1325.6,85.6" sap2010:WorkflowViewState.IdRef="StartTest_1" Priority="Low" TestName="Resurgent validate the accounts listed in Account summary page against the database" />
-    <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke RTA_Read_TestData workflow" sap:VirtualizedContainerService.HintSize="1325.6,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_12" UnSafe="False" WorkflowFileName="Workflows\Parent_WF\RTA_Read_TestData.xaml">
+    <ra:StartTest ContinueOnError="{x:Null}" TagName="{x:Null}" TestDescription="{x:Null}" testList="{x:Null}" DisplayName="Start Test" sap:VirtualizedContainerService.HintSize="1326.4,85.6" sap2010:WorkflowViewState.IdRef="StartTest_1" Priority="Low" TestName="Resurgent validate the accounts listed in Account summary page against the database" />
+    <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke RTA_Read_TestData workflow" sap:VirtualizedContainerService.HintSize="1326.4,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_12" UnSafe="False" WorkflowFileName="Workflows\Parent_WF\RTA_Read_TestData.xaml">
       <ui:InvokeWorkflowFile.Arguments>
         <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config_Data">[in_Config_to_Transaction_Temp]</InArgument>
         <OutArgument x:TypeArguments="sd:DataTable" x:Key="out_TestData">[dt_TestData]</OutArgument>
@@ -168,7 +168,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:InvokeWorkflowFile>
-    <Assign sap2010:Annotation.AnnotationText="Transaction Start Time format  (&quot;yyyy-MM-dd HH:mm:ss&quot;)&#xA;&#xA;Variable : s_e_transactionstart" DisplayName="Assign - Execution Start Time" sap:VirtualizedContainerService.HintSize="1325.6,136" sap2010:WorkflowViewState.IdRef="Assign_4">
+    <Assign sap2010:Annotation.AnnotationText="Transaction Start Time format  (&quot;yyyy-MM-dd HH:mm:ss&quot;)&#xA;&#xA;Variable : s_e_transactionstart" DisplayName="Assign - Execution Start Time" sap:VirtualizedContainerService.HintSize="1326.4,136" sap2010:WorkflowViewState.IdRef="Assign_4">
       <Assign.To>
         <OutArgument x:TypeArguments="s:DateTime">[dateTime_CaseStartTime]</OutArgument>
       </Assign.To>
@@ -182,19 +182,19 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </Assign>
-    <ui:ForEachRow CurrentIndex="{x:Null}" DataTable="[dt_FilteredTestData]" DisplayName="For Each Row To Execute Each Step" sap:VirtualizedContainerService.HintSize="1325.6,3528" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+    <ui:ForEachRow CurrentIndex="{x:Null}" DataTable="[dt_FilteredTestData]" DisplayName="For Each Row To Execute Each Step" sap:VirtualizedContainerService.HintSize="1326.4,4762.4" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
       <ui:ForEachRow.Body>
         <ActivityAction x:TypeArguments="sd:DataRow">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
           </ActivityAction.Argument>
-          <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1236,3379.2" sap2010:WorkflowViewState.IdRef="TryCatch_11">
+          <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1276.8,4613.6" sap2010:WorkflowViewState.IdRef="TryCatch_11">
             <TryCatch.Variables>
               <Variable x:TypeArguments="x:String" Name="str_StepNumber" />
               <Variable x:TypeArguments="x:String" Name="str_GetText" />
             </TryCatch.Variables>
             <TryCatch.Try>
-              <Sequence DisplayName="For Each Sequence" sap:VirtualizedContainerService.HintSize="785.6,3148" sap2010:WorkflowViewState.IdRef="Sequence_80">
+              <Sequence DisplayName="For Each Sequence" sap:VirtualizedContainerService.HintSize="1240,4382.4" sap2010:WorkflowViewState.IdRef="Sequence_80">
                 <Sequence.Variables>
                   <Variable x:TypeArguments="x:String" Name="str_InputData" />
                   <Variable x:TypeArguments="s:DateTime" Name="dateTime_StepStartTime" />
@@ -206,7 +206,7 @@
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="744,255.2" sap2010:WorkflowViewState.IdRef="MultipleAssign_3">
+                <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="1198.4,255.2" sap2010:WorkflowViewState.IdRef="MultipleAssign_3">
                   <ui:MultipleAssign.AssignOperations>
                     <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
                       <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_6">
@@ -260,9 +260,9 @@
                     </scg:List>
                   </ui:MultipleAssign.AssignOperations>
                 </ui:MultipleAssign>
-                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="744,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_32" Level="Info" Message="[&quot;Processing &quot;+in_Test_Case_ID+&quot; &quot;+str_StepNumber]" />
-                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="744,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_31" Level="Info" Message="[&quot;Expected Result: &quot;+ExpectedResult]" />
-                <Switch x:TypeArguments="x:String" DisplayName="Steps" Expression="[str_StepNumber]" sap:VirtualizedContainerService.HintSize="744,2494.4" sap2010:WorkflowViewState.IdRef="Switch`1_1">
+                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1198.4,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_32" Level="Info" Message="[&quot;Processing &quot;+in_Test_Case_ID+&quot; &quot;+str_StepNumber]" />
+                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1198.4,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_31" Level="Info" Message="[&quot;Expected Result: &quot;+ExpectedResult]" />
+                <Switch x:TypeArguments="x:String" DisplayName="Steps" Expression="[str_StepNumber]" sap:VirtualizedContainerService.HintSize="1198.4,3728.8" sap2010:WorkflowViewState.IdRef="Switch`1_1">
                   <Sequence x:Key="Step-1" DisplayName="Step 1 - Execution" sap:VirtualizedContainerService.HintSize="1117.6,3273.6" sap2010:WorkflowViewState.IdRef="Sequence_151">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -1340,19 +1340,19 @@
                       </If>
                     </Sequence>
                   </Sequence>
-                  <Sequence x:Key="Step-6" DisplayName="Step 6 - Execution" sap:VirtualizedContainerService.HintSize="1160,68.8" sap2010:WorkflowViewState.IdRef="Sequence_412">
+                  <Sequence x:Key="Step-6" DisplayName="Step 6 - Execution" sap:VirtualizedContainerService.HintSize="1158.4,3293.6" sap2010:WorkflowViewState.IdRef="Sequence_412">
                     <Sequence.Variables>
                       <Variable x:TypeArguments="sd:DataTable" Name="dt_AccountSummary" />
                       <Variable x:TypeArguments="sd:DataTable" Name="dt_FilterDatabaseData" />
                     </Sequence.Variables>
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:Comment sap:VirtualizedContainerService.HintSize="1118,112" sap2010:WorkflowViewState.IdRef="Comment_43" Text="Add step 1 execution in this sequence.&#xA;e.g. Open browser, enter credentials, landing on home page. Then validating if Home Page as opened.&#xA;" />
-                    <Assign DisplayName="Assign Test Data In Out Argument" sap:VirtualizedContainerService.HintSize="1118,60" sap2010:WorkflowViewState.IdRef="Assign_428">
+                    <ui:Comment sap:VirtualizedContainerService.HintSize="1116.8,113.6" sap2010:WorkflowViewState.IdRef="Comment_43" Text="Add step 1 execution in this sequence.&#xA;e.g. Open browser, enter credentials, landing on home page. Then validating if Home Page as opened.&#xA;" />
+                    <Assign DisplayName="Assign Test Data In Out Argument" sap:VirtualizedContainerService.HintSize="1116.8,60" sap2010:WorkflowViewState.IdRef="Assign_428">
                       <Assign.To>
                         <OutArgument x:TypeArguments="x:String">[out_TestDataStep6]</OutArgument>
                       </Assign.To>
@@ -1360,7 +1360,7 @@
                         <InArgument x:TypeArguments="x:String">[str_InputData]</InArgument>
                       </Assign.Value>
                     </Assign>
-                    <Sequence sap2010:Annotation.AnnotationText="Add execution steps here" DisplayName="Execution Steps" sap:VirtualizedContainerService.HintSize="1118,2943" sap2010:WorkflowViewState.IdRef="Sequence_411">
+                    <Sequence sap2010:Annotation.AnnotationText="Add execution steps here" DisplayName="Execution Steps" sap:VirtualizedContainerService.HintSize="1116.8,2947.2" sap2010:WorkflowViewState.IdRef="Sequence_411">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1368,7 +1368,7 @@
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'BUTTON  _mobile'" sap:VirtualizedContainerService.HintSize="1076,106" sap2010:WorkflowViewState.IdRef="Click_79" KeyModifiers="None" MouseButton="BTN_LEFT">
+                      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'BUTTON  _mobile'" sap:VirtualizedContainerService.HintSize="1075.2,107.2" sap2010:WorkflowViewState.IdRef="Click_79" KeyModifiers="None" MouseButton="BTN_LEFT">
                         <ui:Click.CursorPosition>
                           <ui:CursorPosition Position="Center">
                             <ui:CursorPosition.OffsetX>
@@ -1387,7 +1387,7 @@
                           </ui:Target>
                         </ui:Click.Target>
                       </ui:Click>
-                      <Delay mva:VisualBasic.Settings="{x:Null}" DisplayName="Delay 5 seconds" Duration="00:00:05" sap:VirtualizedContainerService.HintSize="1076,22" sap2010:WorkflowViewState.IdRef="Delay_6">
+                      <Delay mva:VisualBasic.Settings="{x:Null}" DisplayName="Delay 5 seconds" Duration="00:00:05" sap:VirtualizedContainerService.HintSize="1075.2,22.4" sap2010:WorkflowViewState.IdRef="Delay_6">
                         <TextExpression.Namespaces>
                           <sco:Collection x:TypeArguments="x:String">
                             <x:String>System.Activities</x:String>
@@ -1433,7 +1433,7 @@
                           </sap2010:ViewStateManager>
                         </sap2010:WorkflowViewState.ViewStateManager>
                       </Delay>
-                      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'A  #'" sap:VirtualizedContainerService.HintSize="1076,106" sap2010:WorkflowViewState.IdRef="Click_80" KeyModifiers="None" MouseButton="BTN_LEFT">
+                      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'A  #'" sap:VirtualizedContainerService.HintSize="1075.2,107.2" sap2010:WorkflowViewState.IdRef="Click_80" KeyModifiers="None" MouseButton="BTN_LEFT">
                         <ui:Click.CursorPosition>
                           <ui:CursorPosition Position="Center">
                             <ui:CursorPosition.OffsetX>
@@ -1445,14 +1445,14 @@
                           </ui:CursorPosition>
                         </ui:Click.CursorPosition>
                         <ui:Click.Target>
-                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="26b3119c-ad17-4040-9718-ad9a962640f1" InformativeScreenshot="036ad1b9e64e46cce286009bc18c03a0" Selector="&lt;html app='firefox.exe' /&gt;&lt;webctrl tag='DIV' class='dropdown-menu dropdown-menu-right show' /&gt;" WaitForReady="COMPLETE">
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="26b3119c-ad17-4040-9718-ad9a962640f1" InformativeScreenshot="036ad1b9e64e46cce286009bc18c03a0" Selector="&lt;html app='firefox.exe' /&gt;&lt;webctrl aaname='*{{str_InputData}}*' idx='2' tag='A' /&gt;" WaitForReady="COMPLETE">
                             <ui:Target.TimeoutMS>
                               <InArgument x:TypeArguments="x:Int32" />
                             </ui:Target.TimeoutMS>
                           </ui:Target>
                         </ui:Click.Target>
                       </ui:Click>
-                      <Sequence sap2010:Annotation.AnnotationText="Known error on same execution page. If occures then set step execution result to Failure" DisplayName="Actual_Result AND Expected_Result Comparison" sap:VirtualizedContainerService.HintSize="1076,2466" sap2010:WorkflowViewState.IdRef="Sequence_410">
+                      <Sequence sap2010:Annotation.AnnotationText="Known error on same execution page. If occures then set step execution result to Failure" DisplayName="Actual_Result AND Expected_Result Comparison" sap:VirtualizedContainerService.HintSize="1075.2,2466.4" sap2010:WorkflowViewState.IdRef="Sequence_410">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>

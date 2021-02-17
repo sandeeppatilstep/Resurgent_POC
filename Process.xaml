@@ -6,7 +6,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1040,1018.4</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>900,1018.4</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Process_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="48">
@@ -204,16 +204,16 @@
               <av:PointCollection x:Key="ConnectorLocation">260,356.466666666667 260,386 260.266666666667,386</av:PointCollection>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <TryCatch DisplayName="Execute Each Test Case" sap:VirtualizedContainerService.HintSize="200,52.8" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+          <TryCatch DisplayName="Execute Each Test Case" sap:VirtualizedContainerService.HintSize="576,1411.2" sap2010:WorkflowViewState.IdRef="TryCatch_1">
             <TryCatch.Try>
-              <Sequence DisplayName="Start Test Case Initialization" sap:VirtualizedContainerService.HintSize="538,1163" sap2010:WorkflowViewState.IdRef="Sequence_4">
+              <Sequence DisplayName="Start Test Case Initialization" sap:VirtualizedContainerService.HintSize="538.4,1181.6" sap2010:WorkflowViewState.IdRef="Sequence_4">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <Assign sap:VirtualizedContainerService.HintSize="496,60" sap2010:WorkflowViewState.IdRef="Assign_5">
+                <Assign sap:VirtualizedContainerService.HintSize="496.8,60" sap2010:WorkflowViewState.IdRef="Assign_5">
                   <Assign.To>
                     <OutArgument x:TypeArguments="x:String">[ExceptionInfo]</OutArgument>
                   </Assign.To>
@@ -221,7 +221,7 @@
                     <InArgument x:TypeArguments="x:String">[Nothing]</InArgument>
                   </Assign.Value>
                 </Assign>
-                <Assign sap:VirtualizedContainerService.HintSize="496,60" sap2010:WorkflowViewState.IdRef="Assign_6">
+                <Assign sap:VirtualizedContainerService.HintSize="496.8,60" sap2010:WorkflowViewState.IdRef="Assign_6">
                   <Assign.To>
                     <OutArgument x:TypeArguments="x:String">[RetryRequired]</OutArgument>
                   </Assign.To>
@@ -229,8 +229,8 @@
                     <InArgument x:TypeArguments="x:String">No</InArgument>
                   </Assign.Value>
                 </Assign>
-                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="496,91" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;Processing Test Case: &quot;+TestCaseID]" />
-                <ui:CloseApplication ContinueOnError="True" DisplayName="Close Application Firefox" sap:VirtualizedContainerService.HintSize="496,68" sap2010:WorkflowViewState.IdRef="CloseApplication_1">
+                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="496.8,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;Processing Test Case: &quot;+TestCaseID]" />
+                <ui:CloseApplication ContinueOnError="True" DisplayName="Close Application Firefox" sap:VirtualizedContainerService.HintSize="496.8,68.8" sap2010:WorkflowViewState.IdRef="CloseApplication_1">
                   <ui:CloseApplication.Target>
                     <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="525d8b74-ba24-4e02-bbf5-774e39f2ac6c" Selector="&lt;html app='firefox.exe' /&gt;" TimeoutMS="1000" WaitForReady="COMPLETE" />
                   </ui:CloseApplication.Target>
@@ -241,8 +241,8 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </ui:CloseApplication>
-                <Switch x:TypeArguments="x:String" DisplayName="Switch" Expression="[TestCaseID]" sap:VirtualizedContainerService.HintSize="496,450" sap2010:WorkflowViewState.IdRef="Switch`1_1">
-                  <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" x:Key="TC_1" DisplayName="Invoke TC_1 workflow" sap:VirtualizedContainerService.HintSize="334,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_28" UnSafe="False" WorkflowFileName="Workflows\Transaction_WF\TC_1.xaml">
+                <Switch x:TypeArguments="x:String" DisplayName="Switch" Expression="[TestCaseID]" sap:VirtualizedContainerService.HintSize="496.8,463.2" sap2010:WorkflowViewState.IdRef="Switch`1_1">
+                  <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" x:Key="TC_1" DisplayName="Invoke TC_1 workflow" sap:VirtualizedContainerService.HintSize="333.6,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_28" UnSafe="False" WorkflowFileName="Workflows\Transaction_WF\TC_1.xaml">
                     <ui:InvokeWorkflowFile.Arguments>
                       <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config_to_Transaction_Temp">[in_Config_to_Process]</InArgument>
                       <InArgument x:TypeArguments="x:String" x:Key="in_Test_Case_ID">[TestCaseID]</InArgument>
@@ -281,7 +281,7 @@
                       <OutArgument x:TypeArguments="x:String" x:Key="out_TestDataStep11" />
                     </ui:InvokeWorkflowFile.Arguments>
                   </ui:InvokeWorkflowFile>
-                  <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" x:Key="TC_2" DisplayName="Invoke TC_2 workflow" sap:VirtualizedContainerService.HintSize="334,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_29" UnSafe="False" WorkflowFileName="Workflows\Transaction_WF\TC_2.xaml">
+                  <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" x:Key="TC_2" DisplayName="Invoke TC_2 workflow" sap:VirtualizedContainerService.HintSize="333.6,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_29" UnSafe="False" WorkflowFileName="Workflows\Transaction_WF\TC_2.xaml">
                     <ui:InvokeWorkflowFile.Arguments>
                       <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config_to_Transaction_Temp">[in_Config_to_Process]</InArgument>
                       <InArgument x:TypeArguments="x:String" x:Key="in_Test_Case_ID">[TestCaseID]</InArgument>
@@ -320,7 +320,7 @@
                       <OutArgument x:TypeArguments="x:String" x:Key="out_TestDataStep11" />
                     </ui:InvokeWorkflowFile.Arguments>
                   </ui:InvokeWorkflowFile>
-                  <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" x:Key="TC_4" DisplayName="Invoke TC_4 workflow" sap:VirtualizedContainerService.HintSize="334,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_30" UnSafe="False" WorkflowFileName="Workflows\Transaction_WF\TC_4.xaml">
+                  <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" x:Key="TC_4" DisplayName="Invoke TC_4 workflow" sap:VirtualizedContainerService.HintSize="333.6,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_30" UnSafe="False" WorkflowFileName="Workflows\Transaction_WF\TC_4.xaml">
                     <ui:InvokeWorkflowFile.Arguments>
                       <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config_to_Transaction_Temp">[in_Config_to_Process]</InArgument>
                       <InArgument x:TypeArguments="x:String" x:Key="in_Test_Case_ID">[TestCaseID]</InArgument>
@@ -359,12 +359,50 @@
                       <OutArgument x:TypeArguments="x:String" x:Key="out_TestDataStep11" />
                     </ui:InvokeWorkflowFile.Arguments>
                   </ui:InvokeWorkflowFile>
-                  <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" x:Key="TC_3" DisplayName="Invoke TC_3 workflow" sap:VirtualizedContainerService.HintSize="334,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_31" UnSafe="False" WorkflowFileName="Workflows\Transaction_WF\TC_3.xaml">
+                  <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" x:Key="TC_3" DisplayName="Invoke TC_3 workflow" sap:VirtualizedContainerService.HintSize="333.6,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_31" UnSafe="False" WorkflowFileName="Workflows\Transaction_WF\TC_3.xaml">
                     <ui:InvokeWorkflowFile.Arguments>
-                      <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                      <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config_to_Transaction_Temp">
+                        <mva:VisualBasicValue x:TypeArguments="scg:Dictionary(x:String, x:Object)" ExpressionText="in_Config_to_Process" />
+                      </InArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="in_Test_Case_ID">
+                        <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="TestCaseID" />
+                      </InArgument>
+                      <OutArgument x:TypeArguments="x:String" x:Key="out_Step1Status" />
+                      <OutArgument x:TypeArguments="x:String" x:Key="out_Step2Status" />
+                      <OutArgument x:TypeArguments="x:String" x:Key="out_Step3Status" />
+                      <OutArgument x:TypeArguments="x:String" x:Key="out_Step4Status" />
+                      <OutArgument x:TypeArguments="x:String" x:Key="out_Step5Status" />
+                      <OutArgument x:TypeArguments="x:String" x:Key="out_Step6Status" />
+                      <OutArgument x:TypeArguments="x:String" x:Key="out_Step7Status" />
+                      <OutArgument x:TypeArguments="x:String" x:Key="out_ActualResultStep1" />
+                      <OutArgument x:TypeArguments="x:String" x:Key="out_ActualResultStep2" />
+                      <OutArgument x:TypeArguments="x:String" x:Key="out_ActualResultStep3" />
+                      <OutArgument x:TypeArguments="x:String" x:Key="out_ActualResultStep4" />
+                      <OutArgument x:TypeArguments="x:String" x:Key="out_ActualResultStep5" />
+                      <OutArgument x:TypeArguments="x:String" x:Key="out_ActualResultStep6" />
+                      <OutArgument x:TypeArguments="x:String" x:Key="out_ActualResultStep7" />
+                      <OutArgument x:TypeArguments="x:String" x:Key="out_ActualResultStep8" />
+                      <OutArgument x:TypeArguments="x:String" x:Key="out_Step8Status" />
+                      <OutArgument x:TypeArguments="x:String" x:Key="out_TestDataStep1" />
+                      <OutArgument x:TypeArguments="x:String" x:Key="out_TestDataStep2" />
+                      <OutArgument x:TypeArguments="x:String" x:Key="out_TestDataStep3" />
+                      <OutArgument x:TypeArguments="x:String" x:Key="out_TestDataStep4" />
+                      <OutArgument x:TypeArguments="x:String" x:Key="out_TestDataStep5" />
+                      <OutArgument x:TypeArguments="x:String" x:Key="out_TestDataStep6" />
+                      <OutArgument x:TypeArguments="x:String" x:Key="out_TestDataStep7" />
+                      <OutArgument x:TypeArguments="x:String" x:Key="out_TestDataStep8" />
+                      <OutArgument x:TypeArguments="x:String" x:Key="out_TestDataStep9" />
+                      <OutArgument x:TypeArguments="x:String" x:Key="out_TestDataStep10" />
+                      <OutArgument x:TypeArguments="x:String" x:Key="out_Step9Status" />
+                      <OutArgument x:TypeArguments="x:String" x:Key="out_Step10Status" />
+                      <OutArgument x:TypeArguments="x:String" x:Key="out_Step11Status" />
+                      <OutArgument x:TypeArguments="x:String" x:Key="out_ActualResultStep11" />
+                      <OutArgument x:TypeArguments="x:String" x:Key="out_ActualResultStep9" />
+                      <OutArgument x:TypeArguments="x:String" x:Key="out_ActualResultStep10" />
+                      <OutArgument x:TypeArguments="x:String" x:Key="out_TestDataStep11" />
                     </ui:InvokeWorkflowFile.Arguments>
                   </ui:InvokeWorkflowFile>
-                  <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" x:Key="TC_5" DisplayName="Invoke TC_5 workflow" sap:VirtualizedContainerService.HintSize="334,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_32" UnSafe="False" WorkflowFileName="Workflows\Transaction_WF\TC_5.xaml">
+                  <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" x:Key="TC_5" DisplayName="Invoke TC_5 workflow" sap:VirtualizedContainerService.HintSize="333.6,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_32" UnSafe="False" WorkflowFileName="Workflows\Transaction_WF\TC_5.xaml">
                     <ui:InvokeWorkflowFile.Arguments>
                       <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config_to_Transaction_Temp">[in_Config_to_Process]</InArgument>
                       <InArgument x:TypeArguments="x:String" x:Key="in_Test_Case_ID">[TestCaseID]</InArgument>
@@ -403,7 +441,7 @@
                       <OutArgument x:TypeArguments="x:String" x:Key="out_TestDataStep11" />
                     </ui:InvokeWorkflowFile.Arguments>
                   </ui:InvokeWorkflowFile>
-                  <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" x:Key="TC_7" DisplayName="Invoke TC_7 workflow" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_34" UnSafe="False" WorkflowFileName="Workflows\Transaction_WF\TC_7.xaml">
+                  <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" x:Key="TC_7" DisplayName="Invoke TC_7 workflow" sap:VirtualizedContainerService.HintSize="333.6,52.8" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_34" UnSafe="False" WorkflowFileName="Workflows\Transaction_WF\TC_7.xaml">
                     <ui:InvokeWorkflowFile.Arguments>
                       <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config_to_Transaction_Temp">[in_Config_to_Process]</InArgument>
                       <InArgument x:TypeArguments="x:String" x:Key="in_Test_Case_ID">[TestCaseID]</InArgument>
@@ -448,7 +486,7 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </ui:InvokeWorkflowFile>
-                  <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" x:Key="TC_8" DisplayName="Invoke TC_8 workflow" sap:VirtualizedContainerService.HintSize="334,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_35" UnSafe="False" WorkflowFileName="Workflows\Transaction_WF\TC_8.xaml">
+                  <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" x:Key="TC_8" DisplayName="Invoke TC_8 workflow" sap:VirtualizedContainerService.HintSize="333.6,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_35" UnSafe="False" WorkflowFileName="Workflows\Transaction_WF\TC_8.xaml">
                     <ui:InvokeWorkflowFile.Arguments>
                       <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config_to_Transaction_Temp">[in_Config_to_Process]</InArgument>
                       <InArgument x:TypeArguments="x:String" x:Key="in_Test_Case_ID">[TestCaseID]</InArgument>
@@ -487,7 +525,7 @@
                       <OutArgument x:TypeArguments="x:String" x:Key="out_TestDataStep11" />
                     </ui:InvokeWorkflowFile.Arguments>
                   </ui:InvokeWorkflowFile>
-                  <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" x:Key="TC_6" DisplayName="Invoke TC_6 workflow" sap:VirtualizedContainerService.HintSize="334,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_36" UnSafe="False" WorkflowFileName="Workflows\Transaction_WF\TC_6.xaml">
+                  <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" x:Key="TC_6" DisplayName="Invoke TC_6 workflow" sap:VirtualizedContainerService.HintSize="333.6,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_36" UnSafe="False" WorkflowFileName="Workflows\Transaction_WF\TC_6.xaml">
                     <ui:InvokeWorkflowFile.Arguments>
                       <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config_to_Transaction_Temp">[in_Config_to_Process]</InArgument>
                       <InArgument x:TypeArguments="x:String" x:Key="in_Test_Case_ID">[TestCaseID]</InArgument>
@@ -527,7 +565,7 @@
                     </ui:InvokeWorkflowFile.Arguments>
                   </ui:InvokeWorkflowFile>
                 </Switch>
-                <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="496,51" sap2010:WorkflowViewState.IdRef="CommentOut_3">
+                <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="496.8,52.8" sap2010:WorkflowViewState.IdRef="CommentOut_3">
                   <ui:CommentOut.Body>
                     <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="411,204" sap2010:WorkflowViewState.IdRef="Sequence_13">
                       <sap:WorkflowViewStateService.ViewState>
@@ -726,11 +764,11 @@
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <av:Point x:Key="ShapeLocation">260,503.666666666667</av:Point>
-                      <av:Size x:Key="ShapeSize">200,65.6</av:Size>
-                      <av:PointCollection x:Key="ConnectorLocation">360,569.666666666667 360,606.5</av:PointCollection>
+                      <av:Size x:Key="ShapeSize">200,68.8</av:Size>
+                      <av:PointCollection x:Key="ConnectorLocation">360,572.466666666667 360,602.466666666667 360.1,602.466666666667 360.1,606.5</av:PointCollection>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <Sequence DisplayName="Set Transaction Status" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                  <Sequence DisplayName="Set Transaction Status" sap:VirtualizedContainerService.HintSize="200,68.8" sap2010:WorkflowViewState.IdRef="Sequence_10">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -955,7 +993,7 @@
                     </If>
                   </Sequence>
                   <FlowStep.Next>
-                    <FlowDecision x:Name="__ReferenceID4" Condition="[ProcessStatus &lt;&gt; &quot;InProgress&quot;]" DisplayName="Flow Decision" sap:VirtualizedContainerService.HintSize="79,87" sap2010:WorkflowViewState.IdRef="FlowDecision_1">
+                    <FlowDecision x:Name="__ReferenceID4" Condition="[ProcessStatus &lt;&gt; &quot;InProgress&quot;]" DisplayName="Flow Decision" sap:VirtualizedContainerService.HintSize="79.2,87.2" sap2010:WorkflowViewState.IdRef="FlowDecision_1">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1011,7 +1049,7 @@
           <av:PointCollection x:Key="ConnectorLocation">260,172.8 260,195.333333333333</av:PointCollection>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Sequence DisplayName="Process Initiate Notification" sap:VirtualizedContainerService.HintSize="416.8,606.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+      <Sequence DisplayName="Process Initiate Notification" sap:VirtualizedContainerService.HintSize="200,68.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
